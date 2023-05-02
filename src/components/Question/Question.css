@@ -1,0 +1,10 @@
+.Question {
+  margin: 1em;
+}
+
+.question-answer {
+  padding: 1em;
+  margin-bottom: 1em;
+  border-radius: 0.5em;
+  background-color: hsla(0, 0%, 50%, 0.1);
+}

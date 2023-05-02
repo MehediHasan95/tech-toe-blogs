@@ -8,6 +8,7 @@ function App() {
     <main className="App">
       <Header />
       <Blogs />
+
       <Toaster />
     </main>
   );

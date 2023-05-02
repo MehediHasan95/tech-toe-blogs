@@ -3,6 +3,7 @@ import "./Blogs.css";
 import News from "../News/News";
 import BookMark from "../BookMark/BookMark";
 import { toast } from "react-hot-toast";
+import Question from "../Question/Question";
 
 const Blogs = () => {
   const [blogs, setBlogs] = useState([]);
@@ -40,6 +41,7 @@ const Blogs = () => {
             handleMarkAsRead={handleMarkAsRead}
           />
         ))}
+        <Question />
       </div>
       <div>
         <BookMark bookmark={bookmark} readTime={readTime} />
