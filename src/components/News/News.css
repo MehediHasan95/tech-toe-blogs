@@ -1,10 +1,10 @@
 .news-card {
-  border: 1px solid black;
+  border-bottom: 1px solid gray;
   margin: 1em;
 }
 
 .banner {
-  height: 500px;
+  height: 600px;
   overflow: hidden;
   border-radius: 0.5em;
 }
@@ -13,4 +13,34 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+
+.profile-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 1em 0;
+}
+
+.profile {
+  display: flex;
+  align-items: center;
+}
+
+.profile img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 1em;
+}
+
+.profile h3,
+p {
+  line-height: 2px;
+}
+
+.mark-as-read-btn {
+  color: blue;
+  text-decoration: underline;
+  padding: 0.5em 0;
 }

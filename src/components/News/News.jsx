@@ -1,5 +1,7 @@
 /* eslint-disable react/prop-types */
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import "./News.css";
+import { faBookmark } from "@fortawesome/free-regular-svg-icons";
 
 const News = ({ news }) => {
   console.log(news);
@@ -7,10 +9,24 @@ const News = ({ news }) => {
   return (
     <div className="news-card">
       <div className="banner">
-        <img src={banner} alt="" />
+        <img src={banner} alt={title} />
       </div>
       <div className="details">
-        <div className="profile"></div>
+        <div className="profile-header">
+          <div className="profile">
+            <img src={profile} alt={author} />
+            <div>
+              <h3>{author}</h3>
+              <p>{create}</p>
+            </div>
+          </div>
+          <p>
+            {read} min read <FontAwesomeIcon icon={faBookmark} />
+          </p>
+        </div>
+        <h1>{title}</h1>
+        <p>{hash.join(" ")}</p>
+        <p className="mark-as-read-btn">Mark as read</p>
       </div>
     </div>
   );
