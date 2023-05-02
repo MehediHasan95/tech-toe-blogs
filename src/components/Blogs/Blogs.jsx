@@ -7,6 +7,7 @@ import { toast } from "react-hot-toast";
 const Blogs = () => {
   const [blogs, setBlogs] = useState([]);
   const [bookmark, setBookmark] = useState([]);
+  const [readTime, setReadTime] = useState([]);
 
   useEffect(() => {
     fetch("blogs.json")
@@ -24,15 +25,24 @@ const Blogs = () => {
     }
   };
 
+  const handleMarkAsRead = (min) => {
+    setReadTime([...readTime, min]);
+  };
+
   return (
     <div className="Blogs">
       <div>
         {blogs.map((blog) => (
-          <News key={blog.id} news={blog} handleBookmarked={handleBookmarked} />
+          <News
+            key={blog.id}
+            news={blog}
+            handleBookmarked={handleBookmarked}
+            handleMarkAsRead={handleMarkAsRead}
+          />
         ))}
       </div>
       <div>
-        <BookMark bookmark={bookmark} />
+        <BookMark bookmark={bookmark} readTime={readTime} />
       </div>
     </div>
   );

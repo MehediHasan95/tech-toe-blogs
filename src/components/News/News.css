@@ -43,6 +43,12 @@ p {
   color: blue;
   text-decoration: underline;
   padding: 0.5em 0;
+  cursor: pointer;
+  display: inline-block;
+}
+
+.mark-as-read-btn:hover {
+  font-weight: bold;
 }
 
 .faBookmark {

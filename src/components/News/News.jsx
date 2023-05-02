@@ -3,7 +3,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import "./News.css";
 import { faBookmark } from "@fortawesome/free-regular-svg-icons";
 
-const News = ({ news, handleBookmarked }) => {
+const News = ({ news, handleBookmarked, handleMarkAsRead }) => {
   const { banner, profile, author, create, read, title, hash } = news;
   return (
     <div className="news-card">
@@ -30,7 +30,12 @@ const News = ({ news, handleBookmarked }) => {
         </div>
         <h1>{title}</h1>
         <p>{hash.join(" ")}</p>
-        <p className="mark-as-read-btn">Mark as read</p>
+        <p
+          onClick={() => handleMarkAsRead(news.read)}
+          className="mark-as-read-btn"
+        >
+          Mark as read
+        </p>
       </div>
     </div>
   );
