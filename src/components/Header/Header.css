@@ -2,9 +2,11 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #333333;
+  background-color: #6047ec;
   color: white;
   padding: 0 1em;
+  border-radius: 0.5em;
+  margin: 0.1em;
 }
 
 nav a {

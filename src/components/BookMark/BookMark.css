@@ -1,0 +1,27 @@
+.BookMark {
+  margin: 1em;
+  position: sticky;
+  top: 1em;
+}
+
+.spent-time {
+  border: 1px solid #6047ec;
+  color: #6047ec;
+  text-align: center;
+  border-radius: 0.5em;
+  background-color: hsla(249, 81%, 60%, 0.1);
+}
+
+.marked-blogs {
+  background-color: #f3f3f3;
+  border-radius: 0.5em;
+  padding: 0.5em;
+  margin-top: 1em;
+}
+
+.marked-blogs h4 {
+  font-weight: normal;
+  padding: 1em;
+  background-color: white;
+  border-radius: 0.5em;
+}
