@@ -3,7 +3,7 @@ import "./Header.css";
 const Header = () => {
   return (
     <nav>
-      <h1>Knowledge Cafe</h1>
+      <h1>Tech Toe Blogs</h1>
       <div>
         <a href="/">Home</a>
         <a href="/">Blog</a>
